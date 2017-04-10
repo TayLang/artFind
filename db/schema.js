@@ -15,6 +15,22 @@ const usersSchema = new mongoose.Schema({
 
 })
 
+
+ const artSchema = new mongoose.Schema({
+	"Accession Number": { type: String },
+	"Temp ID": { type: String },
+	"Display Title": { type: String },
+	"Display Artist": { type: String },
+	"Creation Date": { type: String },
+	"Media & Support": { type: String },
+	"Credit Line": { type: String },
+	"Current Location": { type: String },
+	"Specific Location": { type: String },
+	"Department": { type: String },
+	"Council District": { type: String }
+})
+
 module.exports = {
-  User: mongoose.model('User', usersSchema)
+  User: mongoose.model('User', usersSchema),
+  Art: mongoose.model('art', artSchema)
 }

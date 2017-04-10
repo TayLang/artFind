@@ -3,6 +3,7 @@ const apiRouter = Router()
 let helpers = require('../config/helpers.js')
 
 let User = require('../db/schema.js').User
+let Art = require('../db/schema.js').Art
 
   
   apiRouter
@@ -46,6 +47,26 @@ let User = require('../db/schema.js').User
     })
 
     // Routes for a Model(resource) should have this structure
+
+  apiRouter
+    .get('/arts', function(req, res){
+      Art.find(req.query, function(err, rec){
+        if (err) {
+          return res.status(400).json(err)
+        }
+        res.json(rec)
+      })
+    })
+
+    .post('/arts', function(request, response){
+      var newArt = new Art(request.body)
+      newArt.save(function(error, record){
+        if (error) {
+          return response.status(400).json(error)
+        }
+        response.json(record)
+      })
+    })
 
 
 module.exports = apiRouter
