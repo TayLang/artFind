@@ -25,6 +25,7 @@ const usersSchema = new mongoose.Schema({
 	"Media & Support": { type: String },
 	"Credit Line": { type: String },
 	"Current Location": { type: String },
+	"LatLong": { type: String },
 	"Specific Location": { type: String },
 	"Department": { type: String },
 	"Council District": { type: String }

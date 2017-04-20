@@ -3,10 +3,66 @@
 	box-sizing: border-box;
 }
 
-h1 {
-	font-size: 300px;
-	text-align: center;
-	color: fuchsia;
+.welcomeHead {
+	position: absolute;
+	z-index: 10;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: black;
 }
 
-.container div { height: 700px; }
+
+.leaflet-container {
+	height: 700px;
+	z-index: 0;
+	max-width: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.banner {
+//	z-index: 100;
+	background-color: white;
+	border: solid blue 2px;
+	margin: auto;
+
+}
+
+.listBox {
+	padding: 10px;
+	border: solid black 3px;
+}
+
+.banner * {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.backgroundPic {
+	background: lightblue;
+	margin: auto;
+	position: center;
+	width: 100vw;
+	position: relative;
+	text-align: center;
+	z-index: 0;
+
+}
+
+.goToMap {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%)
+}
+
+.detailWrapper img {
+	 max-height: 65vh;
+	 display: block;
+}
+
+.artInfo {
+	right: 5%;
+}
