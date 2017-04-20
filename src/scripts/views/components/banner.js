@@ -4,16 +4,16 @@ var Banner = React.createClass({
 	render : function() {
 		return (
 			<div className="banner">
-				<h1>Houston Public Art</h1>
-				<a href='/#main'>
-					<p>Map</p>
-				</a>
-				<a href='/#welcome'>
-					<p>Welcome</p>
-				</a>
-				<a href='./#list'>
-					<p>List</p>
-				</a>
+				<img src='../../images/PreservonsBanner.jpg' />
+				<h1>Explore Houston Art</h1>
+				<div className="banLinks">
+					<button className="welcomeButton" onClick={function() {location.hash = 'welcome'}}>Welcome</button>
+
+					<button className="welcomeButton" onClick={function() {location.hash = 'main'}}>Map</button>
+
+					<button className="welcomeButton" onClick={function() {location.hash = 'list'}}>List</button>
+
+				</div>
 			</div>
 			)
 	}

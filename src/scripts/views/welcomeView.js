@@ -7,7 +7,7 @@ var WelcomeView = React.createClass({
 		return (
 			<div className='backgroundPic'>
 				<img src='../images/Preservons.jpg'/>
-				<h1 className="welcomeHead">Do You Even Art, Bro?</h1>
+				<h1 className="welcomeHead">Explore Houston Art</h1>
 				<button className="goToMap" onClick={function() {location.hash = 'main'}}>Go To Map</button>
 			</div>
 		)

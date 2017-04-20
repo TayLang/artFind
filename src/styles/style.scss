@@ -1,6 +1,21 @@
 * {
 	font-family: Helvetica, Arial, sans-serif;
 	box-sizing: border-box;
+	// margin: auto;
+}
+
+button {
+	background-color: black;
+	color: white;
+	border: white 3px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 150px;
+    margin: auto;
+    opacity: .6;
 }
 
 .welcomeHead {
@@ -12,43 +27,86 @@
 	color: black;
 }
 
-
-.leaflet-container {
-	height: 700px;
-	z-index: 0;
-	max-width: 80%;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.banner {
-//	z-index: 100;
-	background-color: white;
-	border: solid blue 2px;
-	margin: auto;
-
-}
-
-.listBox {
-	padding: 10px;
-	border: solid black 3px;
-}
-
-.banner * {
-	display: inline-block;
-	margin-right: 40px;
-}
-
 .backgroundPic {
 	background: lightblue;
 	margin: auto;
 	position: center;
-	width: 100vw;
+	max-width: 95vw;
+	max-height: 95vh;
 	position: relative;
 	text-align: center;
 	z-index: 0;
 
 }
+
+.backgroundPic img {
+	box-shadow: 7px 5px 5px #888888;
+	max-width: 92vw;
+	max-height: 92vh;
+}
+
+
+.banner {
+	z-index: 100;
+	// background-color: lightblue;
+	//border: solid blue 2px;
+	margin: auto;
+	position: relative;
+	position: center;
+    box-shadow: 7px 5px 5px #888888;
+	// left: 50%;
+	// transform: translateX(-50%);
+	height: 25vh;
+	max-width: 72%;
+}
+
+
+
+.banner * {
+	display: inline-block;
+	// margin-right: 40px;
+}
+
+.banner img {
+	position: absolute;
+	max-width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.banner h1 {
+	z-index: 101;
+	position: absolute;
+	left: 5%;
+	font-style: italic;
+	color: white;
+}
+
+.banLinks {
+	position: absolute;
+	margin: auto;
+	right: 5%;
+}
+
+.banLinks a {
+	margin-right: 20px;
+}
+
+.welcomeButton {
+	display: block;
+}
+
+.leaflet-container {
+	height: 700px;
+	z-index: 0;
+	max-width: 72%;
+	left: 50%;
+	transform: translateX(-50%);
+	max-height: 80vh;
+	top: 20%;
+}
+
+
 
 .goToMap {
 	position: absolute;
@@ -63,6 +121,23 @@
 	 display: block;
 }
 
+.listBox {
+	// padding: 10px;
+	border: solid black 3px;
+	margin: 20px;
+	max-width: 60;
+	// position: relative;
+	position: center;
+	// left: 50%;
+	// transform: translateX(-50%);
+}
+
+.listBox * {
+	text-align: center;
+}
+
 .artInfo {
-	right: 5%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }

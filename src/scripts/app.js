@@ -16,7 +16,7 @@ const app = function() {
   		"main" : "handleMain",
       "detail/:_id" : "handleDetail",
       "list" : "handleList",
-    //  "*splat" : "redirect",
+      "*splat" : "redirect",
 
   	},
 

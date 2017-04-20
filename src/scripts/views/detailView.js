@@ -28,7 +28,7 @@ var DetailView = React.createClass({
 				<Banner />
 				<div className="artInfo">
 					<img src={`https://maps.googleapis.com/maps/api/streetview?size=600x300&location=
-						${this.state.artMod.get('Current Location')}&heading=151.78&key=AIzaSyDwT8l8c7TN5wvYY8TgOGhvHYTDjRKO7vc`} />
+						${this.state.artMod.get('Current Location')}&key=AIzaSyDwT8l8c7TN5wvYY8TgOGhvHYTDjRKO7vc`} />
 					<p>Artist: {this.state.artMod.get('Display Artist')}</p>
 					<p>Piece Name: {this.state.artMod.get('Display Title')}</p>
 					<p>More Specificer Location: {this.state.artMod.get('Specific Location')}</p>
