@@ -4,6 +4,10 @@
 	// margin: auto;
 }
 
+.container {
+	background: linear-gradient(to right, #44a08d, #093637);
+}
+
 button {
 	background-color: black;
 	color: white;
@@ -28,11 +32,11 @@ button {
 }
 
 .backgroundPic {
-	background: lightblue;
+//	background: lightblue;
 	margin: auto;
 	position: center;
-	max-width: 95vw;
-	max-height: 95vh;
+	max-width: 100vw;
+	max-height: 100vh;
 	position: relative;
 	text-align: center;
 	z-index: 0;
@@ -40,9 +44,9 @@ button {
 }
 
 .backgroundPic img {
-	box-shadow: 7px 5px 5px #888888;
-	max-width: 92vw;
-	max-height: 92vh;
+	box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset; 
+	max-width: 100vw;
+	max-height: 100vh;
 }
 
 
@@ -53,7 +57,7 @@ button {
 	margin: auto;
 	position: relative;
 	position: center;
-    box-shadow: 7px 5px 5px #888888;
+  //  box-shadow: 7px 5px 5px #888888;
 	// left: 50%;
 	// transform: translateX(-50%);
 	height: 25vh;
@@ -130,6 +134,8 @@ button {
 	position: center;
 	// left: 50%;
 	// transform: translateX(-50%);
+	background: white;
+
 }
 
 .listBox * {
@@ -140,4 +146,9 @@ button {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+.artInfo img {
+    box-shadow: 7px 5px 5px #888888;
+
 }
