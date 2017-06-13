@@ -20,3 +20,8 @@ What Technology Was Used to Build This?
 Besides some HTML and CSS, this was built entirely in Javascript. The front end was built in a Flux React architecture. The map library used was React-Leaflet.js. The M of the MVC used was Backbone.
 
 The back end was built in Node, and deployed in MongoDB. Middleware used includes Express, Underscore, and Mongoose.
+
+The Future of Houston Public Art
+--------------------------------
+
+If there's enough interest in the app/I ever get the time, I want to make it mobile responsive, include a search function, and add a photo-upload feature so we can crowd-source pictures of the art pieces. That'd be neat.
