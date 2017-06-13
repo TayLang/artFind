@@ -14,6 +14,8 @@ On the front end of the app, I have a map that displays the location of every pi
 
 There is also a "list" view that displays the pieces in an ordered list, as opposed to a topographical reresentation.
 
+The API can be accessed with the url "/api/arts"
+
 What Technology Was Used to Build This?
 ---------------------------------------
 
