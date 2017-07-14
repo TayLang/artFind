@@ -2,7 +2,7 @@
   "name": "artFind",
   "version": "0.1.0",
   "engines": {
-    "node" "8.1.4"
+    "node": "8.1.4"
   },
   "scripts": {
     "go": "npm run watch && npm run dev",
